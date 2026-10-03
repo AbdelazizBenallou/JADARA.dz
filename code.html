@@ -1,0 +1,1007 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><link rel="stylesheet" id="jadara-base" href="assets/css/base.css"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="assets/js/tailwind.config.js"></script>
+<link rel="stylesheet" id="jadara-buttons" href="assets/css/buttons.css"><link rel="stylesheet" id="jadara-photo-frame" href="assets/css/photo-frame.css"><link rel="stylesheet" id="jadara-members-motion" href="assets/css/members.css">
+<link rel="stylesheet" id="jadara-page-motion" href="assets/css/page-motion.css">
+</head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 top-4 px-4" data-pg="header"><div class="h-[2px] bg-primary w-full origin-left scale-x-0" id="scroll-indicator"></div><div class="pg-nav h-20 w-full md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between gap-gutter max-w-6xl mx-auto rounded-full bg-surface-container-lowest/90 backdrop-blur-md border border-[#E7E3EB] shadow-md px-6"><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-sm" data-path="about" href="#"><img alt="Jadara Logo" class="h-10 w-auto max-w-[170px] object-contain object-left" src="assets/logo.png" width="370" height="160" loading="eager" decoding="async"><span class="hidden"><span class="font-headline-sm text-headline-sm uppercase tracking-tight text-on-surface font-bold">Jadara</span><span class="w-2 h-2 rounded-full bg-[#4d1b65] ml-1"></span></span></a></div><nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="text-primary font-bold"><a aria-current="page" class="transition-colors text-primary font-bold" data-path="about" href="#">About</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" data-path="values" href="#values">Values</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" data-path="events" href="#events">Events</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" data-path="members" href="#members">Members</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" data-path="story" href="#story">Story</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" data-path="gallery" href="#gallery">Gallery</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" data-path="contact" href="#contact">Contact</a></nav><div class="flex items-center gap-space-md"><a class="jd-btn hidden sm:inline-flex items-center gap-space-xs font-label-lg text-label-lg bg-primary text-on-primary hover:bg-on-primary-fixed-variant px-space-md py-space-sm transition-colors" data-path="join-the-club" href="#"><span class="">Join the Club →</span></a><div class="flex items-center gap-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-fixed" src="https://lh3.googleusercontent.com/aida/AEtjO1Xq4ti16N9e1K__sOXGWVUi2cmIPM4KxLvrJ72GG0Ypd9L4fwytIR8xxoMjs8WoyfGYq-dkAXoyizOrqCqMgFqdylZBQlTcbzWNJKsJtIlsWEv2zR8xHcOaRSbROKP3uPZ3YZMJjAguVx8AUoZwS0Bso-zPw4E9HE59rIYIDOmDFjY-RsO6sH7U7iGzUWA1b7DMwMaPBBvY1vER1qf0RSF2SFbhgM7ZK310YBza-fnPp25UPurdR7OBnw"></div><button aria-controls="mobile-drawer" aria-expanded="false" aria-label="Toggle navigation menu" class="xl:hidden p-2 text-on-surface hover:text-primary transition-colors flex items-center justify-center relative w-10 h-10 rounded focus:outline-none focus:ring-2 focus:ring-primary" id="hamburger-btn" type="button"><div class="w-6 h-5 relative flex flex-col justify-between" id="hamburger-icon-wrapper"><span class="w-full h-0.5 bg-on-surface rounded-full transition-all duration-300 origin-left" id="bar-1"></span><span class="w-full h-0.5 bg-on-surface rounded-full transition-all duration-300" id="bar-2"></span><span class="w-full h-0.5 bg-on-surface rounded-full transition-all duration-300 origin-left" id="bar-3"></span></div></button></div></div></header><div id="nav-scrim" class="fixed inset-0 z-40 bg-on-surface/45 opacity-0 pointer-events-none transition-opacity duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] xl:hidden"></div><!-- FULL-SCREEN ANIMATED MOBILE DRAWER NAVIGATION (md:hidden / xl:hidden) --><div aria-hidden="true" aria-label="Mobile Navigation" class="fixed top-0 right-0 z-50 h-full w-1/2 max-w-[420px] bg-[#FFFFFF] flex flex-col justify-between p-4 sm:p-6 xl:hidden transform translate-x-full transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] shadow-2xl overflow-y-auto" id="mobile-drawer" role="dialog"><div class="flex items-center justify-between pb-6 border-b border-[#DDD8E5]"><a class="flex items-center gap-2 drawer-nav-link" href="#"><img alt="Jadara" class="h-10 w-auto max-w-[170px] object-contain object-left" src="assets/logo.png" width="370" height="160" decoding="async"></a><button aria-label="Close navigation menu" class="p-2 text-on-surface hover:text-primary transition-colors rounded-full hover:bg-surface-container flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-primary" id="drawer-close-btn" type="button"><span class="material-symbols-outlined text-2xl">close</span></button></div><nav class="flex flex-col gap-4 py-6" id="drawer-nav-items"><a class="drawer-nav-link group flex items-center justify-between py-2 transition-all duration-300 hover:translate-x-2 border-b border-surface-container-high/50" data-path="about" href="#"><div class="flex items-baseline gap-4"><span class="font-label-mono-tag text-xs font-semibold text-primary">01</span><span class="font-headline-md text-lg sm:text-xl font-semibold tracking-tight text-on-surface group-hover:text-primary transition-colors">ABOUT</span></div><span class="material-symbols-outlined text-primary opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200">arrow_forward</span></a><a class="drawer-nav-link group flex items-center justify-between py-2 transition-all duration-300 hover:translate-x-2 border-b border-surface-container-high/50" data-path="community" href="#values"><div class="flex items-baseline gap-4"><span class="font-label-mono-tag text-xs font-semibold text-primary">02</span><span class="font-headline-md text-lg sm:text-xl font-semibold tracking-tight text-on-surface group-hover:text-primary transition-colors">COMMUNITY</span></div><span class="material-symbols-outlined text-primary opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200">arrow_forward</span></a><a class="drawer-nav-link group flex items-center justify-between py-2 transition-all duration-300 hover:translate-x-2 border-b border-surface-container-high/50" data-path="events" href="#events"><div class="flex items-baseline gap-4"><span class="font-label-mono-tag text-xs font-semibold text-primary">03</span><span class="font-headline-md text-lg sm:text-xl font-semibold tracking-tight text-on-surface group-hover:text-primary transition-colors">EVENTS</span></div><span class="material-symbols-outlined text-primary opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200">arrow_forward</span></a><a class="drawer-nav-link group flex items-center justify-between py-2 transition-all duration-300 hover:translate-x-2 border-b border-surface-container-high/50" data-path="members" href="#members"><div class="flex items-baseline gap-4"><span class="font-label-mono-tag text-xs font-semibold text-primary">04</span><span class="font-headline-md text-lg sm:text-xl font-semibold tracking-tight text-on-surface group-hover:text-primary transition-colors">MEMBERS</span></div><span class="material-symbols-outlined text-primary opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200">arrow_forward</span></a><a class="drawer-nav-link group flex items-center justify-between py-2 transition-all duration-300 hover:translate-x-2 border-b border-surface-container-high/50" data-path="gallery" href="#gallery"><div class="flex items-baseline gap-4"><span class="font-label-mono-tag text-xs font-semibold text-primary">05</span><span class="font-headline-md text-lg sm:text-xl font-semibold tracking-tight text-on-surface group-hover:text-primary transition-colors">GALLERY</span></div><span class="material-symbols-outlined text-primary opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200">arrow_forward</span></a><a class="drawer-nav-link group flex items-center justify-between py-2 transition-all duration-300 hover:translate-x-2 border-b border-surface-container-high/50" data-path="contact" href="#contact"><div class="flex items-baseline gap-4"><span class="font-label-mono-tag text-xs font-semibold text-primary">06</span><span class="font-headline-md text-lg sm:text-xl font-semibold tracking-tight text-on-surface group-hover:text-primary transition-colors">CONTACT</span></div><span class="material-symbols-outlined text-primary opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200">arrow_forward</span></a></nav><div class="pt-6 border-t border-[#E7E3EB] flex flex-col gap-4"><div class="flex items-center justify-between"><span class="font-label-mono-tag text-label-mono-tag uppercase tracking-widest text-on-surface-variant font-semibold">Follow Us</span><div class="flex items-center gap-4"><a class="w-10 h-10 rounded-full bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface hover:text-primary transition-all duration-200 group shadow-sm" href="#" aria-label="Instagram"><svg class="w-6 h-6 transition-transform duration-200 group-hover:scale-110" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg></a><a class="w-10 h-10 rounded-full bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface hover:text-primary transition-all duration-200 group shadow-sm" href="#" aria-label="Facebook"><svg class="w-6 h-6 transition-transform duration-200 group-hover:scale-110" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg></a><a class="w-10 h-10 rounded-full bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface hover:text-primary transition-all duration-200 group shadow-sm" href="#" aria-label="LinkedIn"><svg class="w-6 h-6 transition-transform duration-200 group-hover:scale-110" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg></a></div></div><a class="jd-btn drawer-nav-link w-full py-4 px-6 bg-primary text-on-primary hover:bg-on-primary-fixed-variant font-label-lg text-center font-bold tracking-wide transition-colors flex items-center justify-center gap-2" href="#contact"><span class="">JOIN THE CLUB →</span></a></div></div><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<section class="relative w-full bg-surface-container-lowest px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl lg:py-32" data-pg="hero">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter lg:gap-gutter-desktop items-center">
+<!-- Left Column: Assertive Editorial Copy -->
+<div class="lg:col-span-7 flex flex-col items-start gap-space-md">
+<!-- Monospaced Category Tag -->
+<div class="inline-flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-mono-tag text-label-mono-tag uppercase text-on-primary-fixed-variant tracking-widest">
+            Jadara Club — Community / Culture / Connection
+          </span>
+</div>
+<!-- Huge Display Headline -->
+<h1 class="font-display-hero text-headline-lg lg:text-[66px] lg:leading-[1.08] text-on-surface uppercase tracking-tight">
+          Make space for something <span class="text-primary italic font-serif">meaningful.</span>
+</h1>
+<!-- Editorial Description Paragraph -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+          Jadara is an intellectual salon and cultural collective built around people, ideas, craft, and authentic dialogue. We strip away synthetic networking to foster unscripted creative communion.
+        </p>
+<!-- Actions -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-sm w-full sm:w-auto">
+<a class="jd-btn group inline-flex items-center justify-center gap-space-xs font-label-lg text-label-lg bg-primary text-on-primary hover:bg-on-primary-fixed-variant px-space-lg py-space-md transition-all duration-200" data-path="join-the-club" href="#contact">
+<span class="">Join the Club</span>
+<span class="material-symbols-outlined text-sm transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span>
+</a>
+<a class="inline-flex items-center gap-space-xs font-label-lg text-label-lg text-on-surface hover:text-primary transition-colors py-space-md px-space-xs relative after:content-[''] after:absolute after:bottom-1 after:left-0 after:w-full after:h-[1px] after:bg-on-surface hover:after:bg-primary" href="#events">
+<span class="">Explore Events</span>
+<span class="material-symbols-outlined text-sm">south</span>
+</a>
+</div>
+<!-- Live Social Proof Counter & Avatars -->
+<div class="flex items-center gap-space-md pt-space-lg">
+<div class="flex -space-x-2 overflow-hidden">
+<img alt="Member" class="inline-block h-9 w-9 rounded-full ring-2 ring-surface-container-lowest object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1Xq4ti16N9e1K__sOXGWVUi2cmIPM4KxLvrJ72GG0Ypd9L4fwytIR8xxoMjs8WoyfGYq-dkAXoyizOrqCqMgFqdylZBQlTcbzWNJKsJtIlsWEv2zR8xHcOaRSbROKP3uPZ3YZMJjAguVx8AUoZwS0Bso-zPw4E9HE59rIYIDOmDFjY-RsO6sH7U7iGzUWA1b7DMwMaPBBvY1vER1qf0RSF2SFbhgM7ZK310YBza-fnPp25UPurdR7OBnw">
+<span class="inline-block h-9 w-9 rounded-full ring-2 ring-surface-container-lowest bg-primary-fixed flex items-center justify-center text-xs font-bold text-primary">MK</span>
+<span class="inline-block h-9 w-9 rounded-full ring-2 ring-surface-container-lowest bg-secondary-fixed flex items-center justify-center text-xs font-bold text-secondary">RA</span>
+<span class="inline-block h-9 w-9 rounded-full ring-2 ring-surface-container-lowest bg-surface-container-highest flex items-center justify-center text-[11px] font-bold tracking-tight text-on-surface-variant">+500</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">+500 members actively creating</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Across Algiers, Oran, London &amp; Paris</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Asymmetric Architectural Editorial Visual -->
+<div class="lg:col-span-5 relative mt-space-lg lg:mt-0">
+<div class="relative w-full aspect-[4/3] bg-surface-container rounded-xl overflow-hidden jd-photo">
+<img class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" src="assets/hero_section.jpg" width="1600" height="1200" loading="eager" fetchpriority="high" decoding="async" alt="Jadara Club members and hosts gathered together inside the main salon." data-alt="Jadara Club members and hosts gathered together inside the main salon.">
+<!-- Image Inset Gradient Scrim -->
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/60 via-transparent to-transparent"></div>
+<!-- Bottom Micro-Caption inside photo -->
+<div class="absolute bottom-6 left-6 right-6 flex items-end justify-between text-on-primary">
+<div>
+<span class="font-label-mono-tag text-label-mono-tag uppercase tracking-widest text-primary-fixed block">Salon No. 42</span>
+<p class="font-headline-sm text-headline-sm text-on-primary">The Architecture of Stillness</p>
+</div>
+<span class="font-label-mono-tag text-label-mono-tag text-primary-fixed bg-on-surface/40 backdrop-blur-sm px-2 py-1 rounded">2026 Archive</span>
+</div>
+</div>
+<!-- Floating Badges Layered Tactilely -->
+<div class="absolute -top-4 -left-4 bg-surface-container-lowest p-space-sm rounded shadow-md hidden sm:flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-label-mono-tag text-label-mono-tag uppercase text-on-surface tracking-wider">Est. 2020</span>
+</div>
+<div class="absolute -bottom-6 -right-2 bg-surface-container-lowest p-space-md rounded shadow-md hidden sm:block max-w-[200px]">
+<p class="font-label-md text-label-md text-on-surface font-semibold leading-snug">"Curated collisions for the restless mind."</p>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-1">— Cultural Gazette</span>
+</div>
+</div>
+</div>
+</section>
+<!-- INTRO / ABOUT SECTION (Editorial Two-Column) -->
+<section class="w-full bg-surface-container-low px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl lg:py-28" id="about">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter lg:gap-gutter-desktop">
+<!-- Left Editorial Narrative -->
+<div class="lg:col-span-6 flex flex-col justify-between">
+<div>
+<span class="font-label-mono-tag text-label-mono-tag text-primary uppercase tracking-widest block mb-space-sm">
+            01 / Manifest
+          </span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface uppercase tracking-tight max-w-lg mb-space-md">
+            A club built around people, not titles.
+          </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-space-md">
+            Jadara brings together people who want to learn, create, connect and contribute. We create physical and conceptual spaces where spontaneous conversations evolve into enduring partnerships, independent publications, and progressive ventures.
+          </p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-lg">
+            Through monthly conversational salons, intimate communal dinners, quiet studio residencies, and collaborative showcases, we sustain an ecosystem of radical hospitality and focused intellectual pursuit.
+          </p>
+</div>
+<div class="grid grid-cols-2 gap-space-md pt-space-md bg-surface-container-lowest p-space-md rounded">
+<div>
+<span class="font-display-hero text-headline-lg text-primary block leading-none font-bold">100%</span>
+<span class="font-label-md text-label-md text-on-surface-variant mt-1 block">Curated Curation Ratio</span>
+</div>
+<div>
+<span class="font-display-hero text-headline-lg text-secondary block leading-none font-bold" data-pg-count>04</span>
+<span class="font-label-md text-label-md text-on-surface-variant mt-1 block">Independent City Hubs</span>
+</div>
+</div>
+</div>
+<!-- Right Editorial Image Cluster -->
+<div class="lg:col-span-6 relative mt-space-lg lg:mt-0 flex flex-col gap-space-md">
+<div class="relative w-full h-[440px] bg-surface-container rounded overflow-hidden jd-photo">
+<img class="w-full h-full object-cover" src="assets/about_manifest.jpg" width="1280" height="852" loading="lazy" decoding="async" alt="Jadara members reviewing large-scale typography proofs and studio layouts inside the workshop." data-alt="Jadara members reviewing large-scale typography proofs and studio layouts inside the workshop.">
+<div class="absolute top-4 right-4 bg-primary text-on-primary font-headline-lg text-headline-lg px-3 py-1 rounded leading-none select-none">
+            01
+          </div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary">auto_stories</span>
+<span class="font-label-lg text-label-lg text-on-surface">The Jadara Manifesto — Vol. IV</span>
+</div>
+<a class="font-label-mono-tag text-label-mono-tag uppercase text-primary tracking-widest hover:underline" href="#">Read Dispatch →</a>
+</div>
+</div>
+</div>
+</section>
+<!-- CLUB VALUES / BENEFITS (4-Column Architectural Grid) -->
+<section class="w-full bg-surface-container-lowest px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl lg:py-28" id="values">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-space-md">
+<div>
+<span class="font-label-mono-tag text-label-mono-tag text-primary uppercase tracking-widest block mb-space-xs">Pillars of Practice</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface uppercase tracking-tight">Our Core Disciplines</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+        A structured environment designed to reject transactional networking in favor of shared friction and deep creative exploration.
+      </p>
+</div>
+<!-- Editorial Minimalist Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- 01 COMMUNITY -->
+<div class="group bg-surface-container p-space-lg rounded flex flex-col justify-between min-h-[320px] transition-all duration-300 hover:bg-surface-container-high shadow-sm">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-label-mono-tag text-label-mono-tag uppercase tracking-widest text-primary group-hover:text-primary-container transition-colors">01 / Culture</span>
+<span class="material-symbols-outlined text-secondary text-2xl group-hover:scale-110 transition-transform">groups</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase tracking-tight mb-space-sm group-hover:text-primary transition-colors">Community</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Meet people who share your curiosity, intellectual ambition and constructive energy. No status pretenses; pure collaborative parity.
+          </p>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<span class="font-label-mono-tag text-label-mono-tag text-on-surface-variant uppercase tracking-wider">Cohort Rituals</span>
+<span class="material-symbols-outlined text-sm text-on-surface-variant group-hover:translate-x-1 group-hover:text-primary transition-all">east</span>
+</div>
+</div>
+<!-- 02 CREATIVE ENERGY -->
+<div class="group bg-surface-container p-space-lg rounded flex flex-col justify-between min-h-[320px] transition-all duration-300 hover:bg-surface-container-high shadow-sm">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-label-mono-tag text-label-mono-tag uppercase tracking-widest text-primary group-hover:text-primary-container transition-colors">02 / Action</span>
+<span class="material-symbols-outlined text-secondary text-2xl group-hover:scale-110 transition-transform">bolt</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase tracking-tight mb-space-sm group-hover:text-primary transition-colors">Creative Energy</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Turn latent concepts into physical publications, installations, collaborative studios, and independent experiments.
+          </p>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<span class="font-label-mono-tag text-label-mono-tag text-on-surface-variant uppercase tracking-wider">Studio Grants</span>
+<span class="material-symbols-outlined text-sm text-on-surface-variant group-hover:translate-x-1 group-hover:text-primary transition-all">east</span>
+</div>
+</div>
+<!-- 03 LEARNING -->
+<div class="group bg-surface-container p-space-lg rounded flex flex-col justify-between min-h-[320px] transition-all duration-300 hover:bg-surface-container-high shadow-sm">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-label-mono-tag text-label-mono-tag uppercase tracking-widest text-primary group-hover:text-primary-container transition-colors">03 / Discourse</span>
+<span class="material-symbols-outlined text-secondary text-2xl group-hover:scale-110 transition-transform">menu_book</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase tracking-tight mb-space-sm group-hover:text-primary transition-colors">Learning</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Discover unprecedented perspectives through guest salons, masterclasses, and intensive dialectical seminars led by leading practitioners.
+          </p>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<span class="font-label-mono-tag text-label-mono-tag text-on-surface-variant uppercase tracking-wider">Bi-Weekly Masterclasses</span>
+<span class="material-symbols-outlined text-sm text-on-surface-variant group-hover:translate-x-1 group-hover:text-primary transition-all">east</span>
+</div>
+</div>
+<!-- 04 CONNECTION -->
+<div class="group bg-surface-container p-space-lg rounded flex flex-col justify-between min-h-[320px] transition-all duration-300 hover:bg-surface-container-high shadow-sm">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-label-mono-tag text-label-mono-tag uppercase tracking-widest text-primary group-hover:text-primary-container transition-colors">04 / Synergy</span>
+<span class="material-symbols-outlined text-secondary text-2xl group-hover:scale-110 transition-transform">hub</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase tracking-tight mb-space-sm group-hover:text-primary transition-colors">Connection</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Build resilient interpersonal bonds that transcend geographical boundaries and live far beyond the walls of the physical club.
+          </p>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<span class="font-label-mono-tag text-label-mono-tag text-on-surface-variant uppercase tracking-wider">Global Reciprocity</span>
+<span class="material-symbols-outlined text-sm text-on-surface-variant group-hover:translate-x-1 group-hover:text-primary transition-all">east</span>
+</div>
+</div>
+</div>
+</section>
+<!-- EVENTS SECTION ('WHAT'S HAPPENING' / 'COME TO THE NEXT ONE.') -->
+<section class="w-full bg-surface-container-low px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl lg:py-28" id="events">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between mb-space-xl gap-space-md">
+<div>
+<span class="font-label-mono-tag text-label-mono-tag text-primary uppercase tracking-widest block mb-space-xs">Current Programming</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface uppercase tracking-tight">Come to the next one.</h2>
+</div>
+<a class="inline-flex items-center gap-space-xs font-label-lg text-label-lg text-primary hover:text-on-primary-fixed-variant transition-colors group" href="#">
+<span class="">View all seasonal gatherings</span>
+<span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
+</a>
+</div>
+<!-- 3 Curated Event Cards with Varied Ratios -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Event 01: Creative Night (Span 5 cols) -->
+<article class="lg:col-span-5 bg-surface-container-lowest rounded overflow-hidden shadow-sm flex flex-col justify-between group">
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-surface-container jd-photo">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Atmospheric low-key event photography of an evening creative salon inside an industrial warehouse space. Warm amber uplighting, group of creatives listening intently to a panel, candid and documentary style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLY3sl1VcmrIUDHF4OTYXfLsJTXbHVitG6Ko_9bqDRmq8hH_a6ZVd5O885fQAKV_OIy3eQOlmBI7gbH4UfRdm0JvNT9BxRZ0o5evlptQRFygbYxGVY_l3Yo-jjZQTHvTgfIj_IqaCiAhnqW9ljnRCopptDVwDWItiRW93Ji-BRKQ5CimzPBnXkaNsSYBabORITZ-7cJwbw7nEhNjkSNjCqd1oDGOdpyeBSobVjXoGMdON28GLIoKdD">
+<div class="absolute top-4 left-4 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1 rounded">
+<span class="font-label-mono-tag text-label-mono-tag uppercase text-primary font-bold">Art &amp; Concept</span>
+</div>
+<div class="absolute bottom-4 right-4 bg-on-surface text-on-primary px-3 py-1 rounded">
+<span class="font-label-mono-tag text-label-mono-tag uppercase tracking-wider">Limited to 40 Guests</span>
+</div>
+</div>
+<div class="p-space-lg flex flex-col justify-between flex-grow">
+<div>
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant mb-space-xs">
+<span class="material-symbols-outlined text-sm">calendar_today</span>
+<span class="">18 OCT 2026</span>
+<span class="mx-1">•</span>
+<span class="material-symbols-outlined text-sm">pin_drop</span>
+<span class="">Jadara Main Salon</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface uppercase tracking-tight mb-space-sm group-hover:text-primary transition-colors">
+              Creative Night: Latent Forms
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              An evening of unscripted ideas, open-source portfolio critiques, and collaborative auditory performance exploring contemporary visual craft.
+            </p>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-semibold">RSVP Member Pass</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- Event 02: Community Meetup (Span 4 cols) -->
+<article class="lg:col-span-4 bg-surface-container-lowest rounded overflow-hidden shadow-sm flex flex-col justify-between group">
+<div class="relative w-full aspect-[4/3] overflow-hidden bg-surface-container jd-photo">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Overhead aesthetic documentary view of a long wooden communal dining table set with organic tea ceramic vessels, artisanal notebooks, and seasonal wild flora during a morning meetup." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3ZxhaTRwttIzF2asKMAQkxKutPlcsegolX8uToxdwYI7XDprsvQbHFoyMRdmMUojH4Rl_fSSd_JEmOs9SzrmbB2m9B6QVFBnmbPAmGSBE4YlzsozS6AxWtQrLmJbvV8tlEDScI27Q-GGLviUlnZzkS7rsmWi2ZagsYeGB6PDmMFm8GUdXRtqXxIfjnapRaCFUc12p_f_F-BTrHeFbzXD-wOzGaVvt0teEXczlvVrTh46XSvy_mePi">
+<div class="absolute top-4 left-4 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1 rounded">
+<span class="font-label-mono-tag text-label-mono-tag uppercase text-secondary font-bold">Gathering</span>
+</div>
+</div>
+<div class="p-space-lg flex flex-col justify-between flex-grow">
+<div>
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant mb-space-xs">
+<span class="material-symbols-outlined text-sm">calendar_today</span>
+<span class="">26 OCT 2026</span>
+<span class="mx-1">•</span>
+<span class="material-symbols-outlined text-sm">pin_drop</span>
+<span class="">The Loft Gallery</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase tracking-tight mb-space-sm group-hover:text-primary transition-colors">
+              Community Assembly &amp; Tea Ritual
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Open town hall agenda, rapid-fire project incubators, and our seasonal oolong tea service. Bring an ongoing dilemma to unpack.
+            </p>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<span class="font-label-md text-label-md text-secondary font-semibold">Open to Prospective Members</span>
+<span class="material-symbols-outlined text-secondary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- Event 03: Masterclass Workshop (Span 3 cols) -->
+<article class="lg:col-span-3 bg-surface-container-lowest rounded overflow-hidden shadow-sm flex flex-col justify-between group">
+<div class="relative w-full aspect-[1/1] overflow-hidden bg-surface-container jd-photo">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Hands of an editorial designer carefully arranging letterpress typography metal slugs and archival paper proofs under bright direct task lamp lighting in a print studio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8eXc4ZX8NIG4HFJetU9-2hWV_TwkNu4qeSZA4RDa3M5wpjlHUYa_lMB2x4eBLESifyO8wHOP4DPUqCK62e8OzYKeJ_U3mRuQBSmw791xCOY1AJGqBe5oHn3oyqpe5e8RrTf1UoNtzoxNR9QaUExPIIVLVsNF9qlb6GKrgLVk1UCjBGo6F7d-eEsH-5Craz2Z1Ij06wwZRbNZk-Jq2VmuQVdrkHckDo9-Ne-_9VPX1s2-QrtvU-Ns6">
+<div class="absolute top-4 left-4 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1 rounded">
+<span class="font-label-mono-tag text-label-mono-tag uppercase text-on-surface font-bold">Workshop</span>
+</div>
+</div>
+<div class="p-space-lg flex flex-col justify-between flex-grow">
+<div>
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant mb-space-xs">
+<span class="material-symbols-outlined text-sm">calendar_today</span>
+<span class="">02 NOV 2026</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase tracking-tight mb-space-sm group-hover:text-primary transition-colors">
+              Masterclass: Print &amp; Post-Digital
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Hands-on physical print layout, micro-typography, and distribution tactics with visiting typographers.
+            </p>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<span class="font-label-mono-tag text-label-mono-tag uppercase text-primary tracking-wider">Seats Filling</span>
+<span class="material-symbols-outlined text-sm text-primary">north_east</span>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- GLOBAL TEAM SECTION (Collective Roster & Hubs) -->
+<section class="w-full bg-surface-container-highest px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl lg:py-28 scroll-mt-20" id="global-team">
+<div class="max-w-6xl mx-auto">
+<!-- Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-space-md">
+<div>
+<span class="font-label-mono-tag text-label-mono-tag text-primary uppercase tracking-widest block mb-space-xs">Global Team</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface uppercase tracking-tight max-w-xl">One collective, many wilayas.</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+The people below are the working core of Jadara &mdash; the hosts, curators and technicians who keep every salon running, from Tiaret to Adrar.
+</p>
+</div>
+<!-- Split: Collective Photograph + Hub Index -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter lg:gap-gutter-desktop items-start">
+<div class="lg:col-span-7 relative">
+<div class="relative w-full aspect-[4/3] bg-surface-container rounded overflow-hidden jd-photo">
+<img class="w-full h-full object-cover" src="assets/members_team.jpg" width="1280" height="960" alt="The global Jadara team photographed together in the club's main salon." loading="lazy" decoding="async">
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/70 via-transparent to-transparent"></div>
+<div class="absolute bottom-5 left-5 right-5 flex items-end justify-between text-on-primary">
+<div>
+<span class="font-label-mono-tag text-label-mono-tag uppercase tracking-widest text-primary-fixed block">Collective Portrait</span>
+<p class="font-headline-sm text-headline-sm">Main Salon, after the last session of the season</p>
+</div>
+<span class="font-label-mono-tag text-label-mono-tag uppercase text-primary-fixed bg-on-surface/40 backdrop-blur-sm px-2 py-1 rounded">2026</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Hub Index -->
+<div class="bg-surface-container-lowest rounded border border-[#E7E3EB]">
+<ol class="divide-y divide-[#E7E3EB]">
+<li class="flex items-center justify-between gap-space-md px-space-md py-space-md">
+<div class="flex items-baseline gap-space-sm">
+<span class="font-label-mono-tag text-label-mono-tag text-primary font-bold">01</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm uppercase tracking-tight">Tiaret</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Salon Mensuel &amp; Studio</p>
+</div>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">Est. 2021</span>
+</li>
+<li class="flex items-center justify-between gap-space-md px-space-md py-space-md">
+<div class="flex items-baseline gap-space-sm">
+<span class="font-label-mono-tag text-label-mono-tag text-primary font-bold">02</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm uppercase tracking-tight">Adrar</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Terrain Residencies</p>
+</div>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">Est. 2022</span>
+</li>
+<li class="flex items-center justify-between gap-space-md px-space-md py-space-md">
+<div class="flex items-baseline gap-space-sm">
+<span class="font-label-mono-tag text-label-mono-tag text-primary font-bold">03</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm uppercase tracking-tight">Laghout</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Arts &amp; Artisanat</p>
+</div>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">Est. 2023</span>
+</li>
+<li class="flex items-center justify-between gap-space-md px-space-md py-space-md">
+<div class="flex items-baseline gap-space-sm">
+<span class="font-label-mono-tag text-label-mono-tag text-primary font-bold">04</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm uppercase tracking-tight">Constantine</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Publishing Desk</p>
+</div>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">Est. 2024</span>
+</li>
+</ol>
+</div>
+<!-- Collective Figures -->
+<div class="grid grid-cols-2 gap-space-md">
+<div class="bg-surface-container-lowest rounded border border-[#E7E3EB] p-space-md">
+<span class="font-display-hero text-headline-lg text-primary block leading-none font-bold">12</span>
+<span class="font-label-md text-label-md text-on-surface-variant mt-1 block">Core Specialists</span>
+</div>
+<div class="bg-surface-container-lowest rounded border border-[#E7E3EB] p-space-md">
+<span class="font-display-hero text-headline-lg text-secondary block leading-none font-bold" data-pg-count>04</span>
+<span class="font-label-md text-label-md text-on-surface-variant mt-1 block">Wilayas Represented</span>
+</div>
+</div>
+<a class="group inline-flex items-center gap-space-xs self-start font-label-lg text-label-lg text-primary hover:text-on-primary-fixed-variant transition-colors" href="#contact">
+<span>Work with the team</span>
+<span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- MEMBERS SECTION ('THE PEOPLE' / 'MEET THE COMMUNITY.') -->
+<!-- MEMBERS SECTION ('THE PEOPLE' / 'MEET THE COMMUNITY.') -->
+<section class="jd-members" id="members" data-jd-members>
+<div class="jd-head">
+<span class="jd-eyebrow">The People</span>
+<h2 class="jd-title"><span class="jd-title__line"><span class="jd-title__inner" data-jd-line>Meet the</span></span><span class="jd-title__line"><span class="jd-title__inner" data-jd-line>Community.</span></span></h2>
+<span class="jd-rule" aria-hidden="true"></span>
+<div class="jd-head__foot">
+<p class="jd-lead">Independent practitioners, architects, writers and cultural technologists defining tomorrow&rsquo;s narrative. Filter the index, then open any profile to read their practice in full.</p>
+<span class="jd-index">Specialists Index &mdash; Edition <b>04</b></span>
+</div>
+</div>
+<!-- Featured Member Spotlight (bento split, subtle parallax) -->
+<div class="jd-spotlight">
+<div class="jd-spotlight__grid">
+<div class="jd-spotlight__media jd-photo">
+<img src="https://lh3.googleusercontent.com/aida/AEtjO1Xq4ti16N9e1K__sOXGWVUi2cmIPM4KxLvrJ72GG0Ypd9L4fwytIR8xxoMjs8WoyfGYq-dkAXoyizOrqCqMgFqdylZBQlTcbzWNJKsJtIlsWEv2zR8xHcOaRSbROKP3uPZ3YZMJjAguVx8AUoZwS0Bso-zPw4E9HE59rIYIDOmDFjY-RsO6sH7U7iGzUWA1b7DMwMaPBBvY1vER1qf0RSF2SFbhgM7ZK310YBza-fnPp25UPurdR7OBnw" alt="Editorial portrait of a community organiser smiling in a bright studio loft." loading="lazy" decoding="async" data-jd-parallax="0.16">
+<span class="jd-spotlight__tag">Member #084 • Editorial Director &amp; Community Catalyst</span>
+</div>
+<div class="jd-spotlight__body">
+<div>
+<span class="material-symbols-outlined" style="color:var(--jd-violet);font-size:36px;display:block;margin-bottom:1rem" aria-hidden="true">format_quote</span>
+<blockquote class="jd-quote">&ldquo;Jadara gave me a place to meet people who challenge the way I think. It is the only space where an architect, a sound designer and an archivist can build something together without an RFP.&rdquo;</blockquote>
+</div>
+<div class="jd-spotlight__foot">
+<div>
+<h3 class="jd-spotlight__name">Amira Kaci</h3>
+<p class="jd-spotlight__role">Editorial Director &amp; Community Catalyst &mdash; Member since 2021</p>
+</div>
+<button class="jd-spotlight__cta" type="button" data-open="amira-kaci" data-num="084" data-name="Amira Kaci" data-role="Editorial Director &amp; Community Catalyst" data-city="Paris" data-cat="media" data-since="2021" data-about="Founded the editorial desk and still edits the first draft of everything. Amira thinks a community is only as good as its slowest member, and organises accordingly." data-specs="Editorial Strategy | Community Building | Partnerships" data-img="https://lh3.googleusercontent.com/aida/AEtjO1Xq4ti16N9e1K__sOXGWVUi2cmIPM4KxLvrJ72GG0Ypd9L4fwytIR8xxoMjs8WoyfGYq-dkAXoyizOrqCqMgFqdylZBQlTcbzWNJKsJtIlsWEv2zR8xHcOaRSbROKP3uPZ3YZMJjAguVx8AUoZwS0Bso-zPw4E9HE59rIYIDOmDFjY-RsO6sH7U7iGzUWA1b7DMwMaPBBvY1vER1qf0RSF2SFbhgM7ZK310YBza-fnPp25UPurdR7OBnw" data-alt="Editorial portrait of a community organiser smiling in a bright studio loft.">View profile <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></button>
+</div>
+</div>
+</div>
+</div>
+<!-- Specialty Filter -->
+<div class="jd-filterbar">
+<div class="jd-filter" role="group" aria-label="Filter members by specialty" data-jd-filter>
+<button class="jd-filter__item is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+<button class="jd-filter__item" type="button" data-filter="design" aria-pressed="false">Design</button>
+<button class="jd-filter__item" type="button" data-filter="technology" aria-pressed="false">Technology</button>
+<button class="jd-filter__item" type="button" data-filter="business" aria-pressed="false">Business</button>
+<button class="jd-filter__item" type="button" data-filter="media" aria-pressed="false">Media</button>
+<button class="jd-filter__item" type="button" data-filter="art-culture" aria-pressed="false">Art & Culture</button>
+<button class="jd-filter__item" type="button" data-filter="education" aria-pressed="false">Education</button>
+<span class="jd-filter__indicator" data-jd-indicator aria-hidden="true"></span>
+</div>
+<p class="jd-count"><b data-jd-count>12</b> members shown</p>
+</div>
+<!-- Member Grid / Mobile Carousel -->
+<div class="jd-grid" role="list" data-jd-grid>
+<article class="jd-card" role="listitem" data-id="maya-lin" data-category="design" data-num="012" data-name="Maya Lin" data-role="Architectural Designer" data-city="Algiers" data-since="2021" data-about="Builds housing and civic interiors where structure does the talking. Maya runs the club’s architecture reading group and still draws by hand before she ever opens a laptop." data-specs="Spatial Systems | Interior Architecture | Material Research">
+<div class="jd-card__frame jd-photo">
+<img class="jd-card__img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsBBsERCE_XRF5-YrVlsGAW74WzfJia6GYxR5U1Dzvxpo4Y2WBEx2CQgUPtBcOp3GKtQsWFf7yTzOHt5Xwv3HgkT1jWFvvVWMQ10V7mA13ioZ0p4cmgOBZlYKNBgqDOq4mJqGjlhKMbysyOR0jQd29IztgNT2capQ9lI3ylQXq9fqC-buhdnzoCOe8NLH_Sf2gJfAMauf7XaWDwWWV1b1m8uaf-HjJfWW3ZDFtQb4xz4C09ZQ0R_00" alt="Editorial portrait of an architectural designer in a structured linen jacket against a raw concrete wall." loading="lazy" decoding="async" width="600" height="800">
+<span class="jd-card__tint"></span>
+<span class="jd-card__num">012</span>
+<span class="jd-card__arrow"><span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></span>
+</div>
+<div class="jd-card__meta">
+<h3 class="jd-card__name">Maya Lin</h3>
+<p class="jd-card__role">Architectural Designer • Algiers</p>
+<span class="jd-card__accent"></span>
+</div>
+<button class="jd-card__hit" type="button" data-open="maya-lin" aria-label="Open the profile of Maya Lin"><span class="jd-sr">View profile</span></button>
+</article>
+<article class="jd-card" role="listitem" data-id="idris-bouzid" data-category="design" data-num="027" data-name="Idris Bouzid" data-role="Typographer &amp; Type Systems" data-city="Fez" data-since="2022" data-about="A print obsessive who still proofs on paper. Idris maintains the club’s informal archive of exhibition posters and teaches a monthly letterpress evening." data-specs="Letterform Design | Type Systems | Print Craft">
+<div class="jd-card__frame jd-photo">
+<img class="jd-card__img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8eXc4ZX8NIG4HFJetU9-2hWV_TwkNu4qeSZA4RDa3M5wpjlHUYa_lMB2x4eBLESifyO8wHOP4DPUqCK62e8OzYKeJ_U3mRuQBSmw791xCOY1AJGqBe5oHn3oyqpe5e8RrTf1UoNtzoxNR9QaUExPIIVLVsNF9qlb6GKrgLVk1UCjBGo6F7d-eEsH-5Craz2Z1Ij06wwZRbNZk-Jq2VmuQVdrkHckDo9-Ne-_9VPX1s2-QrtvU-Ns6" alt="Hands of a typographer arranging letterpress metal type under a direct task lamp." loading="lazy" decoding="async" width="600" height="800">
+<span class="jd-card__tint"></span>
+<span class="jd-card__num">027</span>
+<span class="jd-card__arrow"><span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></span>
+</div>
+<div class="jd-card__meta">
+<h3 class="jd-card__name">Idris Bouzid</h3>
+<p class="jd-card__role">Typographer &amp; Type Systems • Fez</p>
+<span class="jd-card__accent"></span>
+</div>
+<button class="jd-card__hit" type="button" data-open="idris-bouzid" aria-label="Open the profile of Idris Bouzid"><span class="jd-sr">View profile</span></button>
+</article>
+<article class="jd-card" role="listitem" data-id="nadia-rahmani" data-category="technology" data-num="039" data-name="Nadia Rahmani" data-role="Interactive Installation Artist" data-city="Tunis" data-since="2023" data-about="Builds responsive rooms that react to the people inside them. Nadia prototypes with cardboard before code and documents every failed iteration in public." data-specs="Spatial Computing | Generative Systems | Realtime Graphics">
+<div class="jd-card__frame jd-photo">
+<img class="jd-card__img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGt6habAMhCNlZ2dX-IuTr1Eg3qIPhBIQWIKub8pGAA_o-1uVk1MYd-3wWs6VcJv1UIsi2jCWbGwC8Qw_pP2-C1e4iAmB9dJ2sdrJqc6B7nTdAV-6fgqnOmLp8pmiYuLql92BCE1_-nuZdp8moZdii5UtggQV3mEj5MHYVPjZJP2LF04FEKY6tDapECtRTI-qLyYtiuI1ORcf_P75TAg4DeYWcUEa1Sprnelep35b0EShL796y0S_M" alt="Editorial photograph of creatives gathered around a large oak table in a sunlit studio." loading="lazy" decoding="async" width="600" height="800">
+<span class="jd-card__tint"></span>
+<span class="jd-card__num">039</span>
+<span class="jd-card__arrow"><span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></span>
+</div>
+<div class="jd-card__meta">
+<h3 class="jd-card__name">Nadia Rahmani</h3>
+<p class="jd-card__role">Interactive Installation Artist • Tunis</p>
+<span class="jd-card__accent"></span>
+</div>
+<button class="jd-card__hit" type="button" data-open="nadia-rahmani" aria-label="Open the profile of Nadia Rahmani"><span class="jd-sr">View profile</span></button>
+</article>
+<article class="jd-card" role="listitem" data-id="karim-belkacem" data-category="technology" data-num="044" data-name="Karim Belkacem" data-role="Creative Technologist" data-city="Casablanca" data-since="2022" data-about="Writes the small tools that make ambitious work possible. Karim runs the open prototype lab and would rather refactor a workflow than redraw a slide." data-specs="Creative Coding | Tooling | Prototype Labs">
+<div class="jd-card__frame jd-photo">
+<img class="jd-card__img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4QA3cNAbx6PmaqLOSHNvCZ4BADJSGOdluD07j6eiy4aSUVA9cUSju3p1qTHS_gM5AJALghpGC9vU1D1Y-PPLYm6hXARr4QFRmDa3x-RsZ1DNkUu84z395a8qGOLDtM8_xhsbb2BguEwgmoVpeZ82rS93vUgPn3kEMnfiBYQ46IiFPDMAZytn392XUhH1264T5O0Q9bodLyzOK7nfLVw0Wem-tKw9_RZchIzKa4yz-y72vfUALsn5X" alt="Documentary photograph of workshop participants examining typography proofs and blueprints." loading="lazy" decoding="async" width="600" height="800">
+<span class="jd-card__tint"></span>
+<span class="jd-card__num">044</span>
+<span class="jd-card__arrow"><span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></span>
+</div>
+<div class="jd-card__meta">
+<h3 class="jd-card__name">Karim Belkacem</h3>
+<p class="jd-card__role">Creative Technologist • Casablanca</p>
+<span class="jd-card__accent"></span>
+</div>
+<button class="jd-card__hit" type="button" data-open="karim-belkacem" aria-label="Open the profile of Karim Belkacem"><span class="jd-sr">View profile</span></button>
+</article>
+<article class="jd-card" role="listitem" data-id="tariq-mansouri" data-category="media" data-num="008" data-name="Tariq Mansouri" data-role="Creative Director" data-city="Oran" data-since="2020" data-about="Shapes how the club is seen and how it speaks. Tariq believes a campaign should be arguable, and has retired three taglines he wrote himself." data-specs="Editorial Direction | Brand Films | Campaign Strategy">
+<div class="jd-card__frame jd-photo">
+<img class="jd-card__img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWY2uHKaYYUIkSPQnSN2lkcTlD7V2nlLjkEX2mb7Gxi1iJkdcdsWFoCj8pp_lWL1LdvO9aB_WJM6yFlYuzlYF9Hu5byzl21RbPNrCCQTe1kQteDnDfqph1aUJKGsP5bXOC_wTgop7D9vtc1Oe2D0jJdqhbrD5nSpfdt_Xl5OSJD6UaMEpEnBPtd9ryFMSNy5BJ0dQjo53hq6FPWyTkz9gpOSXZD2ofoEg23Tn1w9k0ChW3NL87MCEK" alt="Portrait of a creative director with a beard, thoughtful, wearing an indigo sweater in a library." loading="lazy" decoding="async" width="600" height="800">
+<span class="jd-card__tint"></span>
+<span class="jd-card__num">008</span>
+<span class="jd-card__arrow"><span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></span>
+</div>
+<div class="jd-card__meta">
+<h3 class="jd-card__name">Tariq Mansouri</h3>
+<p class="jd-card__role">Creative Director • Oran</p>
+<span class="jd-card__accent"></span>
+</div>
+<button class="jd-card__hit" type="button" data-open="tariq-mansouri" aria-label="Open the profile of Tariq Mansouri"><span class="jd-sr">View profile</span></button>
+</article>
+<article class="jd-card" role="listitem" data-id="samira-vance" data-category="media" data-num="051" data-name="Samira Vance" data-role="Sound Artist" data-city="Constantine" data-since="2023" data-about="Records rooms the way other people photograph them. Samira scores the club’s salons and keeps a growing library of door sounds from every city she visits." data-specs="Field Recording | Sound Design | Spatial Audio">
+<div class="jd-card__frame jd-photo">
+<img class="jd-card__img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFE_xMrxqfVVoq4Sd2gsVeD25e_y9H_UCFopG0aRuFHXZ2sNjWwN2o4DNgWi9HakkgOoLu5HoemVcV9ntVXC-rnS0o7AOV-u1p_7J7E_7EfnKzvkPJHovV1XorjFzgrUfZkiI1oWh1Tbo3xbXiFoDbwESNsA_Yc-envIlOgt7ps4ez4O-wfEnw38sBsST4IxiHecE380C4dtomgqEAS-ScjmUIar-xMH0YeMD_w6ZP9N4cXngtIO1n" alt="Portrait of a sound artist holding studio headphones in soft diffused daylight." loading="lazy" decoding="async" width="600" height="800">
+<span class="jd-card__tint"></span>
+<span class="jd-card__num">051</span>
+<span class="jd-card__arrow"><span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></span>
+</div>
+<div class="jd-card__meta">
+<h3 class="jd-card__name">Samira Vance</h3>
+<p class="jd-card__role">Sound Artist • Constantine</p>
+<span class="jd-card__accent"></span>
+</div>
+<button class="jd-card__hit" type="button" data-open="samira-vance" aria-label="Open the profile of Samira Vance"><span class="jd-sr">View profile</span></button>
+</article>
+<article class="jd-card" role="listitem" data-id="rim-haddad" data-category="media" data-num="033" data-name="Rim Haddad" data-role="Documentary Filmmaker" data-city="Marrakesh" data-since="2022" data-about="Films conversations rather than events. Rim edits for the pause after someone says the real thing, and has shot more club salons than anyone here." data-specs="Documentary | Editing | Sound-led Storytelling">
+<div class="jd-card__frame jd-photo">
+<img class="jd-card__img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLY3sl1VcmrIUDHF4OTYXfLsJTXbHVitG6Ko_9bqDRmq8hH_a6ZVd5O885fQAKV_OIy3eQOlmBI7gbH4UfRdm0JvNT9BxRZ0o5evlptQRFygbYxGVY_l3Yo-jjZQTHvTgfIj_IqaCiAhnqW9ljnRCopptDVwDWItiRW93Ji-BRKQ5CimzPBnXkaNsSYBabORITZ-7cJwbw7nEhNjkSNjCqd1oDGOdpyeBSobVjXoGMdON28GLIoKdD" alt="Low-key documentary photograph of an evening salon inside an industrial warehouse." loading="lazy" decoding="async" width="600" height="800">
+<span class="jd-card__tint"></span>
+<span class="jd-card__num">033</span>
+<span class="jd-card__arrow"><span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></span>
+</div>
+<div class="jd-card__meta">
+<h3 class="jd-card__name">Rim Haddad</h3>
+<p class="jd-card__role">Documentary Filmmaker • Marrakesh</p>
+<span class="jd-card__accent"></span>
+</div>
+<button class="jd-card__hit" type="button" data-open="rim-haddad" aria-label="Open the profile of Rim Haddad"><span class="jd-sr">View profile</span></button>
+</article>
+<article class="jd-card" role="listitem" data-id="elena-rostova" data-category="art-culture" data-num="016" data-name="Elena Rostova" data-role="Cultural Curator" data-city="London" data-since="2021" data-about="Curates the club’s exhibitions and most of its arguments. Elena treats a disagreement as a form of collaboration and keeps the walls labelled in plain language." data-specs="Exhibition Curation | Artist Relations | Archive Studies">
+<div class="jd-card__frame jd-photo">
+<img class="jd-card__img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbYwcod1hmkJby2r3W3UjPkXX27ubWVYuL4b7_vXTtelxBWe_SlG6QtG02B09x24tGU_DeN2C3_WKgb50QDRWYue4Rfux6OeedYLaQQs0eOAlWhexlZaxpFhDbFxxWUUuaRkeJ9TENNAnaZcOmqKt9P6VtsGGOSF-SgdGql2vs05ehWO85Q4dzTT_jIUfmdudOsUbmNM8HIPv8Rg_9nTzLKVC9mdEGhvNVVa6uM5w6uLtH9dMXg6u5" alt="Portrait of a cultural curator in a black turtleneck against a sculptural shadow." loading="lazy" decoding="async" width="600" height="800">
+<span class="jd-card__tint"></span>
+<span class="jd-card__num">016</span>
+<span class="jd-card__arrow"><span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></span>
+</div>
+<div class="jd-card__meta">
+<h3 class="jd-card__name">Elena Rostova</h3>
+<p class="jd-card__role">Cultural Curator • London</p>
+<span class="jd-card__accent"></span>
+</div>
+<button class="jd-card__hit" type="button" data-open="elena-rostova" aria-label="Open the profile of Elena Rostova"><span class="jd-sr">View profile</span></button>
+</article>
+<article class="jd-card" role="listitem" data-id="yusuf-demir" data-category="art-culture" data-num="021" data-name="Yusuf Demir" data-role="Night Archivist" data-city="Istanbul" data-since="2021" data-about="Keeps what the club would otherwise forget. Yusuf catalogues every talk, reading and object the community produces, then makes it searchable." data-specs="Book Conservation | Digital Archives | Field Research">
+<div class="jd-card__frame jd-photo">
+<img class="jd-card__img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXJHZHOMaqFpD2yd6jyaYaPexg-3zHureK8O3tu_tttsW9FQw9ckHScRXfVWbSwV6LQq6QeHFc-WKOminFcj5pO06lELh8hLrOybaojbw235s3RO8uqfN97ZKlAmDsHuRs7NPiOKbhLjVhyKMqbiyO8TOidacBoekIqPeOQWudliEZTNS4DLTeATKaM0UJnoGsh5bbVJsjPaM4SNG1apua7uO-rT2VYzTQGPw0zu2r9GwqBQ957lHq" alt="The club library annex at nightfall, warm light, people browsing the shelves." loading="lazy" decoding="async" width="600" height="800">
+<span class="jd-card__tint"></span>
+<span class="jd-card__num">021</span>
+<span class="jd-card__arrow"><span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></span>
+</div>
+<div class="jd-card__meta">
+<h3 class="jd-card__name">Yusuf Demir</h3>
+<p class="jd-card__role">Night Archivist • Istanbul</p>
+<span class="jd-card__accent"></span>
+</div>
+<button class="jd-card__hit" type="button" data-open="yusuf-demir" aria-label="Open the profile of Yusuf Demir"><span class="jd-sr">View profile</span></button>
+</article>
+<article class="jd-card" role="listitem" data-id="salma-benali" data-category="business" data-num="047" data-name="Salma Benali" data-role="Craft Venture Architect" data-city="Marrakesh" data-since="2023" data-about="Helps members turn a good idea into something that pays. Salma structures co-ops, splits equity fairly, and has never once used the word synergy." data-specs="Venture Design | Producers Networks | Fair Pricing">
+<div class="jd-card__frame jd-photo">
+<img class="jd-card__img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_uyVI7l1MKDvfrzZJaMh3L6Y0T_wCxd_pbbDqJVE-Gfg61UUUrQAlMrwQTxrw6d9H8yfwhirzUIy5iXURaFHLkWXXJmnI73lX64P3_Fjb_3ZA1sGyO-HvEj6oo9cwJYl9tYMO7h4x4_vyGx-nTOFasKR6kexpkXWJQ1nZr_c77a3s9dovfiY93uEnP7C2lytv2hoiK1uHqkzIOjwENvpfd2JyxqfAH-GahORZjmH-wEjIFuRe5C30" alt="Close-up of hands preparing ceremonial matcha on a dark counter during the salon." loading="lazy" decoding="async" width="600" height="800">
+<span class="jd-card__tint"></span>
+<span class="jd-card__num">047</span>
+<span class="jd-card__arrow"><span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></span>
+</div>
+<div class="jd-card__meta">
+<h3 class="jd-card__name">Salma Benali</h3>
+<p class="jd-card__role">Craft Venture Architect • Marrakesh</p>
+<span class="jd-card__accent"></span>
+</div>
+<button class="jd-card__hit" type="button" data-open="salma-benali" aria-label="Open the profile of Salma Benali"><span class="jd-sr">View profile</span></button>
+</article>
+<article class="jd-card" role="listitem" data-id="laleh-karimi" data-category="education" data-num="011" data-name="Laleh Karimi" data-role="Philosophy Fellow" data-city="Beitrut" data-since="2020" data-about="Moderates the club’s round-table salons with one rule: no consensus before lunch. Laleh writes the questions nobody wants to answer but everybody needs." data-specs="Dialectic Facilitation | Ethics | Seminar Design">
+<div class="jd-card__frame jd-photo">
+<img class="jd-card__img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC93mfoi2v5brR7pSa_OH1L5LDYfkttp980r7Xnca_m-MHAh7YDm7SAbEi6dUEQ2NKv0kPAmzpiX8FjZJVKXKUJAo_fSgR-O1_e8X-Dz1HIInPXGBZg2XUSUpgFxzFELP-UXZoHDWZzq4COY9bVNCOhzkfe4xxUX4o-IuuR0pLIqxuEBwV-CspEPmZ5_VZM7VDmPvmMM-5XWL2xvSQZnI_NmQZQ2Bnul3uMV2MbduLeAVABZjbrmO3Z" alt="Editorial photograph of an animated debate during a round-table salon." loading="lazy" decoding="async" width="600" height="800">
+<span class="jd-card__tint"></span>
+<span class="jd-card__num">011</span>
+<span class="jd-card__arrow"><span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></span>
+</div>
+<div class="jd-card__meta">
+<h3 class="jd-card__name">Laleh Karimi</h3>
+<p class="jd-card__role">Philosophy Fellow • Beitrut</p>
+<span class="jd-card__accent"></span>
+</div>
+<button class="jd-card__hit" type="button" data-open="laleh-karimi" aria-label="Open the profile of Laleh Karimi"><span class="jd-sr">View profile</span></button>
+</article>
+<article class="jd-card" role="listitem" data-id="ines-chaabane" data-category="education" data-num="036" data-name="Ines Chaabane" data-role="Learning Designer" data-city="Lyon" data-since="2022" data-about="Designs the club’s learning paths so nobody has to start from zero. Ines matches mentors by curiosity rather than seniority and measures a cohort by what it attempts." data-specs="Curriculum Design | Mentorship | Peer Learning">
+<div class="jd-card__frame jd-photo">
+<img class="jd-card__img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAamJxkhDr6QVUAdP6paxQMKXsPP__LCj43I_cSis2FhSEE5CH3NLH753LW6fnczrLb_J5g0pgaSDefos0w05yI9ukgMdsXcuchjrdj_HpKlp8Zb46-WuvDIqcRVMruD6_qaFTuv5SmRY_k6q6IQqZJ6Tvhi5eD-Ie-SEbK5CSy44w__uVGu4MCxfkIv1rb7YgmC1I1nh3BhKMjKCvMPOaM05arUo4lCccKjx4TQRRFuQeLe_kTsmwV" alt="Documentary photograph of the loft gallery with communal tables and people working." loading="lazy" decoding="async" width="600" height="800">
+<span class="jd-card__tint"></span>
+<span class="jd-card__num">036</span>
+<span class="jd-card__arrow"><span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></span>
+</div>
+<div class="jd-card__meta">
+<h3 class="jd-card__name">Ines Chaabane</h3>
+<p class="jd-card__role">Learning Designer • Lyon</p>
+<span class="jd-card__accent"></span>
+</div>
+<button class="jd-card__hit" type="button" data-open="ines-chaabane" aria-label="Open the profile of Ines Chaabane"><span class="jd-sr">View profile</span></button>
+</article>
+</div>
+<!-- Member Statistics -->
+<div class="jd-stats" data-jd-stats>
+<div class="jd-stat">
+<div class="jd-stat__figure"><span class="jd-stat__value" data-count="500">500</span><span class="jd-stat__suffix">+</span></div>
+<span class="jd-stat__label">Members</span>
+<span class="jd-stat__note">Curated practitioners globally</span>
+</div>
+<div class="jd-stat">
+<div class="jd-stat__figure"><span class="jd-stat__value" data-count="30">30</span><span class="jd-stat__suffix">+</span></div>
+<span class="jd-stat__label">Events</span>
+<span class="jd-stat__note">Salons, workshops and critiques</span>
+</div>
+<div class="jd-stat">
+<div class="jd-stat__figure"><span class="jd-stat__value" data-count="12">12</span></div>
+<span class="jd-stat__label">Communities</span>
+<span class="jd-stat__note">Self-organising guild spaces</span>
+</div>
+<div class="jd-stat">
+<div class="jd-stat__figure"><span class="jd-stat__value" data-count="8">8</span><span class="jd-stat__suffix">+</span></div>
+<span class="jd-stat__label">Projects</span>
+<span class="jd-stat__note">Ventures born from conversation</span>
+</div>
+</div>
+</section>
+<!-- COMMUNITY STORY SECTION (Immersive Parallax & Narrative) -->
+<section class="relative w-full overflow-hidden bg-inverse-surface text-inverse-on-surface py-space-xl lg:py-36" id="story" data-pg="story">
+<!-- Atmospheric Visual Background Container -->
+<div class="absolute inset-0 z-0">
+<div class="bg-cover bg-center w-full h-full opacity-20 filter grayscale contrast-125" data-alt="Wide panoramic cinematic shot of a crowded evening cultural salon inside a historic renovated library hall with soaring archways. Groups of engaged guests engaged in lively animated conversation over wine and coffee, warm glows, rich documentary feel." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBPFSSASnjZad2fcHd4FyPgJ_xo_UheNlczBn-xjpeP814IZAD1WIyG4qSKP4KIeSptZJOKIVlbPYXuDnD5cTNFb5KT5c09dI18oYkI2lbVDPbyYB6ItLajlewZohPvzHnPnVD7psxEPsjiY3dlsmBTQZ7cD5cExrRqeZm--Mp3ifuIVquK0b7MhmrR7hOAkbFSb2a6KmiFMmG_tdgEdLFOHQkOeleUMnEIlzdOwUk75Cs8Z4yLjO_0')"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-inverse-surface via-inverse-surface/90 to-inverse-surface/70"></div>
+</div>
+<div class="relative z-10 px-margin md:px-margin-tablet lg:px-margin-desktop max-w-4xl">
+<span class="font-label-mono-tag text-label-mono-tag text-primary-fixed uppercase tracking-widest block mb-space-sm">
+        More Than A Club • Chapter IV
+      </span>
+<h2 class="font-headline-lg text-headline-lg lg:text-display-hero text-inverse-on-surface uppercase tracking-tight leading-tight mb-space-md">
+        The best things start with an unscripted conversation.
+      </h2>
+<p class="font-body-lg text-body-lg text-inverse-on-surface/80 mb-space-lg leading-relaxed">
+        From spontaneous late-night coffee debriefs to city-wide retrospective exhibitions, every enduring initiative in our collective archives originated not from a polished pitch deck, but over an informal gathering where someone dared to voice an unfinished thought.
+      </p>
+<div class="flex flex-wrap items-center gap-space-lg">
+<a class="jd-btn jd-btn--on-dark inline-flex items-center gap-space-xs font-label-lg text-label-lg bg-primary text-on-primary hover:bg-[#3b144f] px-space-lg py-space-md transition-colors" data-path="story" href="#contact">
+<span class="">Read The Complete Chronicle</span>
+<span class="material-symbols-outlined text-sm">menu_book</span>
+</a>
+<div class="flex items-center gap-space-xs text-primary-fixed">
+<span class="material-symbols-outlined text-lg">verified</span>
+<span class="font-label-mono-tag text-label-mono-tag uppercase tracking-wider">Independent • Member Supported</span>
+</div>
+</div>
+</div>
+</section>
+<!-- GALLERY ('INSIDE JADARA' / 'A FEW MOMENTS.') -->
+<section class="w-full bg-surface-container-lowest px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl lg:py-28" id="gallery">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-space-md">
+<div>
+<span class="font-label-mono-tag text-label-mono-tag text-primary uppercase tracking-widest block mb-space-xs">Visual Dispatch</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface uppercase tracking-tight">Inside Jadara — A Few Moments.</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+        Fragments of spontaneous work sessions, publication launches, communal dinners, and quiet late afternoons in our reading rooms.
+      </p>
+</div>
+<!-- Asymmetric Editorial Masonry-Style Mosaic Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Big Span (Rows 1 & 2 Left) -->
+<div class="md:col-span-7 md:row-span-2 relative aspect-[4/3] md:aspect-auto rounded-lg overflow-hidden group cursor-pointer jd-photo">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Candid documentary photo of our expansive high-ceiling loft gallery filled with communal long tables, bespoke wooden chairs, curated zines on display, people working in deep creative flow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAamJxkhDr6QVUAdP6paxQMKXsPP__LCj43I_cSis2FhSEE5CH3NLH753LW6fnczrLb_J5g0pgaSDefos0w05yI9ukgMdsXcuchjrdj_HpKlp8Zb46-WuvDIqcRVMruD6_qaFTuv5SmRY_k6q6IQqZJ6Tvhi5eD-Ie-SEbK5CSy44w__uVGu4MCxfkIv1rb7YgmC1I1nh3BhKMjKCvMPOaM05arUo4lCccKjx4TQRRFuQeLe_kTsmwV">
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-space-md">
+<div>
+<span class="font-label-mono-tag text-label-mono-tag uppercase text-primary-fixed">The Commons • 03:40 PM</span>
+<p class="font-label-lg text-label-lg text-on-primary">Open workspace residency during quarterly print production</p>
+</div>
+</div>
+</div>
+<!-- Top Right (4 cols) -->
+<div class="md:col-span-5 relative aspect-[16/10] rounded-lg overflow-hidden group cursor-pointer jd-photo">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close up aesthetic shot of hands preparing ceremonial matcha and artisanal pour-over coffee on a dark soapstone counter during the Sunday Salon opening." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_uyVI7l1MKDvfrzZJaMh3L6Y0T_wCxd_pbbDqJVE-Gfg61UUUrQAlMrwQTxrw6d9H8yfwhirzUIy5iXURaFHLkWXXJmnI73lX64P3_Fjb_3ZA1sGyO-HvEj6oo9cwJYl9tYMO7h4x4_vyGx-nTOFasKR6kexpkXWJQ1nZr_c77a3s9dovfiY93uEnP7C2lytv2hoiK1uHqkzIOjwENvpfd2JyxqfAH-GahORZjmH-wEjIFuRe5C30">
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-space-md">
+<div>
+<span class="font-label-mono-tag text-label-mono-tag uppercase text-primary-fixed">Ritual • Sunday Morning</span>
+<p class="font-label-lg text-label-lg text-on-primary">Seasonal tea reception</p>
+</div>
+</div>
+</div>
+<!-- Bottom Right (5 cols) -->
+<div class="md:col-span-5 relative aspect-[16/10] rounded-lg overflow-hidden group cursor-pointer jd-photo">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Editorial photograph of an animated debate during a round-table salon, members engaged with notes, glasses of sparkling water, warm ambient glow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC93mfoi2v5brR7pSa_OH1L5LDYfkttp980r7Xnca_m-MHAh7YDm7SAbEi6dUEQ2NKv0kPAmzpiX8FjZJVKXKUJAo_fSgR-O1_e8X-Dz1HIInPXGBZg2XUSUpgFxzFELP-UXZoHDWZzq4COY9bVNCOhzkfe4xxUX4o-IuuR0pLIqxuEBwV-CspEPmZ5_VZM7VDmPvmMM-5XWL2xvSQZnI_NmQZQ2Bnul3uMV2MbduLeAVABZjbrmO3Z">
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-space-md">
+<div>
+<span class="font-label-mono-tag text-label-mono-tag uppercase text-primary-fixed">Discourse • Salon Series</span>
+<p class="font-label-lg text-label-lg text-on-primary">The Ethics of Cultural Archives</p>
+</div>
+</div>
+</div>
+<!-- Panoramic Horizontal Strip Below (12 cols) -->
+<div class="md:col-span-12 relative aspect-[21/7] rounded-lg overflow-hidden group cursor-pointer jd-photo mt-space-xs">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Wide architectural panoramic shot of the Jadara library annex during nightfall, warm interior lights reflecting on floor-to-ceiling glass windows, creatives browsing bookshelves." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXJHZHOMaqFpD2yd6jyaYaPexg-3zHureK8O3tu_tttsW9FQw9ckHScRXfVWbSwV6LQq6QeHFc-WKOminFcj5pO06lELh8hLrOybaojbw235s3RO8uqfN97ZKlAmDsHuRs7NPiOKbhLjVhyKMqbiyO8TOidacBoekIqPeOQWudliEZTNS4DLTeATKaM0UJnoGsh5bbVJsjPaM4SNG1apua7uO-rT2VYzTQGPw0zu2r9GwqBQ957lHq">
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent flex items-end justify-between p-space-lg text-on-primary">
+<div>
+<span class="font-label-mono-tag text-label-mono-tag uppercase text-primary-fixed">Nightfall at Jadara Archive</span>
+<p class="font-headline-sm text-headline-sm">Open until the discussion concludes.</p>
+</div>
+<span class="material-symbols-outlined text-2xl group-hover:translate-x-2 transition-transform">zoom_in</span>
+</div>
+</div>
+</div>
+</section>
+<!-- TESTIMONIALS SLIDER ('FROM THE COMMUNITY') -->
+<section class="w-full bg-surface-container-low px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl lg:py-28" data-pg="quotes">
+<div class="max-w-4xl mx-auto flex flex-col items-center text-center">
+<span class="font-label-mono-tag text-label-mono-tag text-primary uppercase tracking-widest block mb-space-md">
+        Voices From Within
+      </span>
+<!-- Dynamic Testimonial Display Wrapper -->
+<div class="relative w-full min-h-[220px] flex items-center justify-center" id="testimonial-slider">
+<!-- Item 1 (Active) -->
+<div class="testimonial-slide flex flex-col items-center transition-opacity duration-300 opacity-0 pointer-events-none absolute inset-0">
+<p class="font-headline-md text-headline-md lg:text-headline-lg text-on-surface font-normal max-w-3xl leading-snug mb-space-md">
+            “Jadara is far more than scheduled gatherings. It is the three or four kindred spirits you meet whose perspectives linger in your sketchbook for months.”
+          </p>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold">Sarah K.</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Visual Anthropologist &amp; Member since 2023</p>
+</div>
+</div>
+<!-- Item 2 (Hidden by default) -->
+<div class="testimonial-slide flex flex-col items-center transition-opacity duration-300 opacity-0 pointer-events-none absolute inset-0">
+<p class="font-headline-md text-headline-md lg:text-headline-lg text-on-surface font-normal max-w-3xl leading-snug mb-space-md">
+            “In an era where every creative hub has been financialized into co-working real estate, Jadara preserves the sanctity of pure intellectual play.”
+          </p>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold">Dr. Omar Z.</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Philosophy Fellow &amp; Member since 2021</p>
+</div>
+</div>
+<!-- Item 3 (Hidden by default) -->
+<div class="testimonial-slide flex flex-col items-center transition-opacity duration-300 opacity-100">
+<p class="font-headline-md text-headline-md lg:text-headline-lg text-on-surface font-normal max-w-3xl leading-snug mb-space-md">
+            “The collaborative monograph we published last spring was conceived in twenty minutes over Jadara's communal workbench.”
+          </p>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold">Nour Al-Sayed</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Independent Publisher &amp; Member since 2022</p>
+</div>
+</div>
+</div>
+<!-- Navigation Arrows and Dots -->
+<div class="flex items-center gap-space-md mt-space-lg">
+<button aria-label="Previous quote" class="w-10 h-10 rounded-full bg-surface-container-lowest text-on-surface hover:text-primary flex items-center justify-center transition-colors shadow-sm" id="prev-test" type="button">
+<span class="material-symbols-outlined text-sm">west</span>
+</button>
+<div class="flex items-center gap-2">
+<span class="dot-indicator w-2.5 h-2.5 rounded-full transition-all bg-outline-variant"></span>
+<span class="dot-indicator w-2.5 h-2.5 rounded-full transition-all bg-outline-variant"></span>
+<span class="dot-indicator w-2.5 h-2.5 rounded-full transition-all bg-primary"></span>
+</div>
+<button aria-label="Next quote" class="w-10 h-10 rounded-full bg-surface-container-lowest text-on-surface hover:text-primary flex items-center justify-center transition-colors shadow-sm" id="next-test" type="button">
+<span class="material-symbols-outlined text-sm">east</span>
+</button>
+</div>
+</div>
+</section>
+<!-- MEMBERSHIP & INVITATION SECTION ('FIND YOUR PLACE AT JADARA.') -->
+<section class="w-full bg-surface-container-lowest px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl lg:py-28" data-pg="join">
+<div class="max-w-5xl mx-auto bg-surface-container-low p-space-lg md:p-space-xl rounded-xl shadow-sm">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-8 flex flex-col gap-space-sm">
+<span class="font-label-mono-tag text-label-mono-tag text-primary uppercase tracking-widest">
+            Admissions &amp; Application
+          </span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface uppercase tracking-tight">
+            Find your place at Jadara.
+          </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+            We open membership in quarterly cohorts to preserve intimate dynamics and thoughtful conversation. Join a community of people who are curious, creative and ready to build meaningful connections.
+          </p>
+<div class="flex items-center gap-space-sm pt-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-primary text-base">check_circle</span>
+<span class="">No pressure. Just good people, good ideas and good conversations.</span>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col gap-space-sm items-start lg:items-end">
+<a class="jd-btn w-full sm:w-auto inline-flex items-center justify-center gap-space-xs font-label-lg text-label-lg bg-primary text-on-primary hover:bg-on-primary-fixed-variant px-space-xl py-space-md transition-colors text-center" data-path="join-the-club" href="#contact">
+<span class="">Apply For Cohort →</span>
+</a>
+<span class="font-label-mono-tag text-label-mono-tag text-on-surface-variant uppercase tracking-wider text-center lg:text-right">
+            Cohort Fall '26 • Closing Nov 15
+          </span>
+</div>
+</div>
+</div>
+</section>
+<!-- CONTACT SECTION (#contact) -->
+<section class="w-full bg-surface-container-low px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl lg:py-28 scroll-mt-20" id="contact">
+<div class="max-w-6xl mx-auto">
+<!-- Header -->
+<div class="mb-space-xl">
+<span class="font-label-mono-tag text-label-mono-tag text-primary uppercase tracking-widest block mb-space-xs">
+        GET IN TOUCH
+      </span>
+<h2 class="font-display-hero text-headline-lg lg:text-display-hero text-on-surface uppercase tracking-tight">
+        LET'S START A CONVERSATION.
+      </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mt-space-xs">
+        Have a question, an idea, or want to become part of Jadara? We'd love to hear from you.
+      </p>
+</div>
+<!-- Two-column Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter lg:gap-gutter-desktop items-start">
+<!-- LEFT COLUMN (Contact Info) -->
+<div class="lg:col-span-5 flex flex-col justify-between h-full">
+<div>
+<div class="flex items-center gap-space-sm mb-space-md">
+<span class="w-8 h-[2px] bg-primary"></span>
+<span class="font-label-mono-tag text-label-mono-tag text-primary font-bold">07 / DIALOGUE</span>
+</div>
+<h3 class="font-headline-md text-headline-md uppercase text-on-surface tracking-tight mb-space-lg">
+            COME SAY HELLO
+          </h3>
+<div class="flex flex-col gap-space-lg text-on-surface">
+<!-- Email -->
+<a class="group flex items-start gap-space-sm transition-colors hover:text-primary" href="mailto:hello@jadara.club">
+<span class="material-symbols-outlined text-primary text-2xl group-hover:scale-110 transition-transform">mail</span>
+<div class="flex flex-col">
+<span class="font-label-mono-tag text-label-mono-tag text-on-surface-variant uppercase tracking-wider">Direct Dispatch</span>
+<span class="font-headline-sm text-headline-sm font-semibold">hello@jadara.club</span>
+</div>
+</a>
+<!-- Location -->
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-2xl">location_on</span>
+<div class="flex flex-col">
+<span class="font-label-mono-tag text-label-mono-tag text-on-surface-variant uppercase tracking-wider">Current Residence</span>
+<span class="font-headline-sm text-headline-sm font-semibold">Jadara Club Algeria</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Hubs in Algiers, Oran &amp; Independent Partners</span>
+</div>
+</div>
+<!-- Social Links -->
+<div class="pt-space-md border-t border-outline-variant/30 flex flex-col gap-space-sm">
+<span class="font-label-mono-tag text-label-mono-tag text-on-surface-variant uppercase tracking-wider">Public Network</span>
+<div class="flex flex-wrap items-center gap-x-6 gap-y-2"><a class="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface hover:text-primary transition-all duration-200 group shadow-sm" href="#" aria-label="Instagram"><svg class="w-6 h-6 transition-transform duration-200 group-hover:scale-110" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg><span class="font-label-lg text-label-lg font-semibold">Instagram</span></a><a class="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface hover:text-primary transition-all duration-200 group shadow-sm" href="#" aria-label="Facebook"><svg class="w-6 h-6 transition-transform duration-200 group-hover:scale-110" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg><span class="font-label-lg text-label-lg font-semibold">Facebook</span></a><a class="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface hover:text-primary transition-all duration-200 group shadow-sm" href="#" aria-label="LinkedIn"><svg class="w-6 h-6 transition-transform duration-200 group-hover:scale-110" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg><span class="font-label-lg text-label-lg font-semibold">LinkedIn</span></a></div>
+</div>
+</div>
+</div>
+<div class="mt-space-xl p-space-md bg-surface-container-lowest rounded-lg border border-[#DDD8E5] hidden lg:block">
+<p class="font-label-md text-label-md text-on-surface-variant">
+            “No forms for the sake of administration. Every dispatch is read by the curatorial committee.”
+          </p>
+</div>
+</div>
+<!-- RIGHT COLUMN (Contact Form) -->
+<div class="lg:col-span-7 bg-[#FFFFFF] border border-[#DDD8E5] rounded-[8px] p-space-lg md:p-space-xl shadow-sm relative overflow-hidden" id="contact-form-container">
+<!-- Main Form -->
+<form class="flex flex-col gap-space-md" id="contact-form" novalidate="">
+<!-- Name Field -->
+<div class="flex flex-col gap-1.5 field-wrapper">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold" for="contact-name">Your Name <span class="text-primary">*</span></label>
+<div class="relative">
+<input class="w-full px-4 py-3 bg-[#FFFFFF] border border-[#DDD8E5] rounded focus:border-[#4d1b65] focus:ring-2 focus:ring-[#4d1b65]/20 outline-none transition-all duration-200 text-on-surface placeholder:text-on-surface-variant/50 font-body-md" id="contact-name" name="name" required="" type="text">
+</div>
+<span class="field-error hidden text-error font-body-sm text-xs mt-0.5 flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">error</span>
+<span class="">This field is required.</span>
+</span>
+</div>
+<!-- Email Field -->
+<div class="flex flex-col gap-1.5 field-wrapper">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold" for="contact-email">Email Address <span class="text-primary">*</span></label>
+<div class="relative">
+<input class="w-full px-4 py-3 bg-[#FFFFFF] border border-[#DDD8E5] rounded focus:border-[#4d1b65] focus:ring-2 focus:ring-[#4d1b65]/20 outline-none transition-all duration-200 text-on-surface placeholder:text-on-surface-variant/50 font-body-md" id="contact-email" name="email" required="" type="email">
+</div>
+<span class="field-error hidden text-error font-body-sm text-xs mt-0.5 flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">error</span>
+<span class="error-msg">This field is required.</span>
+</span>
+</div>
+<!-- Subject Field -->
+<div class="flex flex-col gap-1.5 field-wrapper">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold" for="contact-subject">Subject <span class="text-primary">*</span></label>
+<div class="relative">
+<input class="w-full px-4 py-3 bg-[#FFFFFF] border border-[#DDD8E5] rounded focus:border-[#4d1b65] focus:ring-2 focus:ring-[#4d1b65]/20 outline-none transition-all duration-200 text-on-surface placeholder:text-on-surface-variant/50 font-body-md" id="contact-subject" name="subject" placeholder="What would you like to talk about?" required="" type="text">
+</div>
+<span class="field-error hidden text-error font-body-sm text-xs mt-0.5 flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">error</span>
+<span class="">This field is required.</span>
+</span>
+</div>
+<!-- Message Field -->
+<div class="flex flex-col gap-1.5 field-wrapper">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold" for="contact-message">Message <span class="text-primary">*</span></label>
+<div class="relative">
+<textarea class="w-full px-4 py-3 bg-[#FFFFFF] border border-[#DDD8E5] rounded focus:border-[#4d1b65] focus:ring-2 focus:ring-[#4d1b65]/20 outline-none transition-all duration-200 text-on-surface placeholder:text-on-surface-variant/50 font-body-md resize-y" id="contact-message" name="message" placeholder="Tell us a little more..." required="" rows="4"></textarea>
+</div>
+<span class="field-error hidden text-error font-body-sm text-xs mt-0.5 flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">error</span>
+<span class="">This field is required.</span>
+</span>
+</div>
+<!-- Submit Button -->
+<div class="pt-space-xs">
+<button class="jd-btn group inline-flex items-center justify-center gap-space-xs font-label-lg text-label-lg bg-[#4d1b65] hover:bg-[#3b144f] text-on-primary px-space-xl py-space-md transition-all duration-300 font-bold w-full sm:w-auto cursor-pointer" id="contact-submit-btn" type="submit">
+<span class="">SEND MESSAGE</span>
+<span class="material-symbols-outlined text-sm transition-transform duration-300 group-hover:translate-x-[6px]">arrow_forward</span>
+</button>
+</div>
+</form>
+<!-- Confirmation State (In-place swap) -->
+<div class="hidden flex-col items-center justify-center py-16 px-6 text-center" id="contact-success-state">
+<div class="w-16 h-16 rounded-full bg-primary-fixed flex items-center justify-center text-primary mb-space-md">
+<span class="material-symbols-outlined text-3xl">done</span>
+</div>
+<span class="font-label-mono-tag text-label-mono-tag text-primary uppercase tracking-widest mb-1 block">CONFIRMATION</span>
+<h3 class="font-headline-lg text-headline-lg uppercase text-on-surface tracking-tight mb-space-xs">
+            MESSAGE SENT
+          </h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md mb-space-lg">
+            Thanks for reaching out. We'll get back to you soon.
+          </p>
+<button class="font-label-mono-tag text-label-mono-tag uppercase text-primary tracking-widest hover:underline cursor-pointer" id="reset-contact-form-btn" type="button">
+            Send another message →
+          </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FINAL CTA HIGH-ENERGY EDITORIAL BANNER -->
+
+</div>
+<!-- Vanilla JS For Micro-Interactions: Testimonial Carousel, Stats Counter, Contact Form & Mobile Drawer -->
+<script src="assets/js/testimonials.js"></script>
+<script src="assets/js/contact-form.js"></script>
+<script src="assets/js/navigation.js"></script></main><footer class="w-full bg-surface-container-lowest shadow-[0_-1px_8px_rgba(0,0,0,0.02)]" data-pg="footer"><div class="w-full px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl"><div class="grid grid-cols-1 md:grid-cols-12 gap-gutter pb-space-xl"><div class="md:col-span-5 flex flex-col gap-space-sm"><a class="flex items-center gap-2" href="#"><img alt="Jadara Logo" class="h-9 w-auto object-contain object-left" src="assets/logo.png" width="370" height="160" loading="lazy" decoding="async"></a><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Community, culture &amp; connection.</p><p class="font-label-mono-tag text-label-mono-tag text-primary uppercase tracking-widest mt-space-xs">Made for the community.</p></div><div class="md:col-span-4 flex flex-col gap-space-sm"><span class="font-label-mono-tag text-label-mono-tag text-on-surface-variant uppercase tracking-wider">Index</span><div class="grid grid-cols-2 gap-x-gutter gap-y-space-xs"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="about" href="#about">About</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="values" href="#values">Values</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="events" href="#events">Events</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="members" href="#members">Members</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="story" href="#story">Story</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="gallery" href="#gallery">Gallery</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="contact" href="#contact">Contact</a></div></div><div class="md:col-span-3 flex flex-col gap-space-sm"><span class="font-label-mono-tag text-label-mono-tag text-on-surface-variant uppercase tracking-wider">Network</span><div class="flex flex-col gap-space-xs"><a class="inline-flex items-center gap-2.5 py-1 text-on-surface-variant hover:text-primary transition-colors group" href="#"><svg class="w-6 h-6 transition-transform duration-200 group-hover:scale-110" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg><span class="font-label-md text-label-md font-medium">Instagram</span></a><a class="inline-flex items-center gap-2.5 py-1 text-on-surface-variant hover:text-primary transition-colors group" href="#"><svg class="w-6 h-6 transition-transform duration-200 group-hover:scale-110" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg><span class="font-label-md text-label-md font-medium">Facebook</span></a><a class="inline-flex items-center gap-2.5 py-1 text-on-surface-variant hover:text-primary transition-colors group" href="#"><svg class="w-6 h-6 transition-transform duration-200 group-hover:scale-110" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg><span class="font-label-md text-label-md font-medium">LinkedIn</span></a></div></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-on-surface-variant"><div class="flex items-center gap-space-sm"><img alt="Jadara Logo" class="h-7 w-auto object-contain object-left" src="assets/logo.png" width="370" height="160" loading="lazy" decoding="async"><span class="">© 2026 Jadara Club. All rights reserved.</span></div><div class="flex items-center gap-space-md"><span class="">Discipline &amp; Culture</span><span class="flex items-center gap-space-xs"><img alt="Scan this QR code to join the Jadara Club" class="w-24 h-24 sm:w-28 sm:h-28 object-contain bg-white border-2 border-[#cbbeff] rounded p-1.5" src="assets/qr_code.png" width="256" height="256" loading="lazy" decoding="async"><span class="font-label-mono-tag text-label-mono-tag uppercase tracking-widest">Scan to join</span></span></div></div></div></footer><!-- MEMBERS PROFILE DRAWER (desktop panel / mobile bottom sheet) -->
+<div class="jd-drawer-root" data-jd-drawer-root aria-hidden="true">
+<div class="jd-drawer__overlay" data-jd-overlay></div>
+<aside class="jd-drawer" data-jd-drawer role="dialog" aria-modal="true" aria-labelledby="jd-drawer-name" aria-describedby="jd-drawer-about">
+<span class="jd-drawer__handle" aria-hidden="true"></span>
+<header class="jd-drawer__bar">
+<span class="jd-drawer__index">Member <b data-jd-dnum>#084</b> <span data-jd-dtotal>of 12 in view</span></span>
+<button class="jd-drawer__close" type="button" data-jd-close aria-label="Close profile"><span class="material-symbols-outlined" aria-hidden="true">close</span></button>
+</header>
+<div class="jd-drawer__scroll">
+<figure class="jd-drawer__figure">
+<img data-jd-dimg src="https://lh3.googleusercontent.com/aida/AEtjO1Xq4ti16N9e1K__sOXGWVUi2cmIPM4KxLvrJ72GG0Ypd9L4fwytIR8xxoMjs8WoyfGYq-dkAXoyizOrqCqMgFqdylZBQlTcbzWNJKsJtIlsWEv2zR8xHcOaRSbROKP3uPZ3YZMJjAguVx8AUoZwS0Bso-zPw4E9HE59rIYIDOmDFjY-RsO6sH7U7iGzUWA1b7DMwMaPBBvY1vER1qf0RSF2SFbhgM7ZK310YBza-fnPp25UPurdR7OBnw" alt="Editorial portrait of a community organiser smiling in a bright studio loft." decoding="async">
+<figcaption data-jd-dcaption>Member #084</figcaption>
+</figure>
+<div class="jd-drawer__body">
+<p class="jd-drawer__category jd-stage" data-jd-dcat>MEDIA</p>
+<h3 class="jd-drawer__name jd-stage" id="jd-drawer-name" data-jd-dname>Amira Kaci</h3>
+<p class="jd-drawer__role jd-stage" data-jd-drole>Editorial Director &amp; Community Catalyst • Paris</p>
+<p class="jd-drawer__about jd-stage" id="jd-drawer-about" data-jd-dabout>Founded the editorial desk and still edits the first draft of everything. Amira thinks a community is only as good as its slowest member, and organises accordingly.</p>
+<div class="jd-drawer__specs jd-stage">
+<p class="jd-drawer__specs-label">Specialities</p>
+<ol data-jd-dspecs></ol>
+</div>
+<div class="jd-drawer__connect jd-stage">
+<a class="jd-social" href="#" aria-label="Instagram"><span class="jd-sr">Instagram</span><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg></a>
+<a class="jd-social" href="#" aria-label="LinkedIn"><span class="jd-sr">LinkedIn</span><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg></a>
+<a class="jd-social" href="#" aria-label="Email"><span class="material-symbols-outlined" aria-hidden="true">mail</span></a>
+<a class="jd-connect" href="#contact">Connect <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
+</div>
+</div>
+</div>
+<nav class="jd-drawer__nav" aria-label="Browse members">
+<button class="jd-drawer__navbtn" type="button" data-jd-prev data-dir="prev"><span class="material-symbols-outlined" aria-hidden="true">arrow_back</span>Previous</button>
+<button class="jd-drawer__navbtn" type="button" data-jd-next data-dir="next">Next<span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></button>
+</nav>
+</aside>
+</div>
+<script src="assets/js/scroll-progress.js"></script>
+
+
+
+
+
+<script src="assets/js/members.js"></script>
+<script src="assets/js/page-motion.js"></script>
+</body></html>

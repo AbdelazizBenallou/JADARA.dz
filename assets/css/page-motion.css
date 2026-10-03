@@ -1,0 +1,207 @@
+/* ============================================================
+   JADARA — PAGE MOTION SYSTEM (all non-members sections)
+   reveal primitives · word-mask headings · parallax
+   card lifts · carousel · micro-interactions · reduced motion
+   ============================================================ */
+
+/* ---------- reveal primitives ---------------------------- */
+html.pg-enhanced [data-pg]{
+  --pg-rest:none;
+  opacity:0;
+  transform:var(--pg-rest);
+  will-change:transform,opacity;
+}
+html.pg-enhanced [data-pg].pg-rise{--pg-rest:translate3d(0,30px,0)}
+html.pg-enhanced [data-pg].pg-left{--pg-rest:translate3d(-32px,0,0)}
+html.pg-enhanced [data-pg].pg-right{--pg-rest:translate3d(32px,0,0)}
+html.pg-enhanced [data-pg].pg-zoom{--pg-rest:scale(1.06)}
+html.pg-enhanced [data-pg].pg-pop{--pg-rest:scale(.94)}
+html.pg-enhanced [data-pg].pg-wipe-b{clip-path:inset(0 0 100% 0)}
+html.pg-enhanced [data-pg].pg-wipe-r{clip-path:inset(0 100% 0 0)}
+html.pg-enhanced [data-pg].is-in{
+  opacity:1;
+  transform:none;
+  clip-path:inset(0 0 0 0);
+  will-change:auto;
+  transition:
+    opacity 720ms var(--ease-soft) var(--pg-t,0ms),
+    transform 820ms var(--ease-expo) var(--pg-t,0ms),
+    clip-path 1000ms var(--ease-expo) var(--pg-t,0ms);
+}
+/* image reveal uses the independent `scale` property so it never
+   collides with Tailwind hover transforms on the same <img> */
+html.pg-enhanced [data-pg] .pg-zoom-in{
+  scale:1.07;
+  opacity:.001;
+  transition:scale 1400ms var(--ease-expo) 160ms,opacity 900ms var(--ease-soft) 160ms;
+}
+html.pg-enhanced [data-pg].is-in .pg-zoom-in{scale:1;opacity:1}
+
+/* ---------- word-mask heading reveal --------------------- */
+.pg-w{
+  display:inline-block;
+  overflow:hidden;
+  vertical-align:top;
+  padding-bottom:.16em;
+  margin-bottom:-.16em;
+}
+.pg-w>span{
+  display:inline-block;
+  transform:translate3d(0,112%,0);
+  transition:transform 940ms var(--ease-expo) calc(var(--pg-t,0ms) + var(--i,0) * 46ms);
+}
+[data-pg-split].is-in .pg-w>span{transform:none}
+
+/* ---------- parallax ------------------------------------ */
+[data-pg-par]{transform:translate3d(0,var(--pg-py,0px),0)}
+html.pg-enhanced [data-pg].pg-par{--pg-rest:translate3d(0,var(--pg-py,0px),0)}
+html.pg-enhanced [data-pg].pg-par.is-in{
+  transition:opacity 720ms var(--ease-soft) var(--pg-t,0ms),
+             clip-path 1000ms var(--ease-expo) var(--pg-t,0ms),
+             transform 260ms linear;
+}
+
+/* ---------- hero ----------------------------------------- */
+.pg-cta{
+  transition:transform 320ms var(--ease-expo),box-shadow 320ms var(--ease-soft),background-color 320ms var(--ease-soft);
+  will-change:transform;
+}
+html .pg-cta:hover{transform:translate3d(0,-3px,0);box-shadow:0 14px 30px -14px rgba(83,8,231,.42)}
+.pg-cta:active{transform:translate3d(0,-1px,0) scale(.99)}
+html.pg-enhanced .pg-avatar{opacity:0;transform:scale(.72) translate3d(0,10px,0)}
+html.pg-enhanced .pg-avatar.is-in{
+  opacity:1;
+  transform:none;
+  transition:transform 560ms var(--ease-expo) var(--pg-t,0ms),
+             opacity 560ms var(--ease-soft) var(--pg-t,0ms);
+}
+
+/* ---------- cards (values · events · join · gallery) ----- */
+.pg-card{
+  position:relative;
+  overflow:hidden;
+  transition:box-shadow 460ms var(--ease-soft),border-color 320ms var(--ease-soft);
+}
+.pg-card::after{
+  content:"";
+  position:absolute;
+  inset:0 0 auto 0;
+  height:3px;
+  background:linear-gradient(90deg,var(--jd-violet),var(--jd-violet-deep));
+  transform:scaleX(0);
+  transform-origin:left center;
+  transition:transform 560ms var(--ease-expo);
+}
+.pg-card:hover::after,.pg-card:focus-within::after{transform:scaleX(1)}
+html.pg-enhanced [data-pg].pg-card.is-in:hover,
+html.pg-enhanced [data-pg].pg-card.is-in:focus-within{transform:translate3d(0,-6px,0);box-shadow:0 22px 44px -26px rgba(23,19,31,.42)}
+
+/* ---------- story (dark band) ---------------------------- */
+[data-pg="story"] .pg-story-bg{transform:translate3d(0,var(--pg-py,0px),0) scale(1.14)}
+html [data-pg="story"] a{transition:transform 320ms var(--ease-expo),box-shadow 320ms var(--ease-soft)}
+html [data-pg="story"] a:hover{transform:translate3d(0,-3px,0);box-shadow:0 14px 30px -16px rgba(0,0,0,.65)}
+
+/* ---------- gallery -------------------------------------- */
+html .pg-cap{transform:translate3d(0,18px,0);transition:transform 560ms var(--ease-expo),opacity 320ms var(--ease-soft)}
+html .group:hover .pg-cap{transform:none}
+html .pg-zoomicon{transition:transform 420ms var(--ease-expo)}
+html .group:hover .pg-zoomicon{transform:translate3d(6px,-6px,0) rotate(90deg)}
+
+/* ---------- testimonials --------------------------------- */
+html .pg-slide{transition:opacity 520ms var(--ease-soft),transform 620ms var(--ease-expo)}
+html .pg-dot{transition:width 480ms var(--ease-expo),background-color 320ms var(--ease-soft)}
+html .pg-dot.is-on{width:26px;border-radius:999px}
+#prev-test,#next-test{
+  transition:transform 320ms var(--ease-expo),background-color 260ms var(--ease-soft),color 260ms var(--ease-soft),box-shadow 320ms var(--ease-soft);
+  will-change:transform;
+}
+#prev-test:hover{transform:translate3d(-3px,0,0);box-shadow:0 12px 24px -16px rgba(23,19,31,.5)}
+#next-test:hover{transform:translate3d(3px,0,0);box-shadow:0 12px 24px -16px rgba(23,19,31,.5)}
+#prev-test:active,#next-test:active{transform:scale(.92)}
+
+/* ---------- contact -------------------------------------- */
+#contact .field-error:not(.hidden){animation:pg-slide-down 340ms var(--ease-expo)}
+#contact .field-wrapper.is-invalid input,#contact .field-wrapper.is-invalid textarea{animation:pg-nudge 380ms var(--ease-expo)}
+#contact .field-wrapper.is-valid input,#contact .field-wrapper.is-valid textarea{border-color:#4d1b65 !important}
+#contact-success-state:not(.hidden){animation:pg-pop-in 520ms var(--ease-expo)}
+#contact-success-state:not(.hidden)>*{animation:pg-stage 640ms var(--ease-expo) backwards}
+#contact-success-state:not(.hidden)>*:nth-child(1){animation-delay:60ms}
+#contact-success-state:not(.hidden)>*:nth-child(2){animation-delay:140ms}
+#contact-success-state:not(.hidden)>*:nth-child(3){animation-delay:200ms}
+#contact-success-state:not(.hidden)>*:nth-child(4){animation-delay:260ms}
+#contact-success-state:not(.hidden)>*:nth-child(5){animation-delay:340ms}
+#contact-success-state:not(.hidden)>div:first-child{animation:pg-badge 720ms var(--ease-expo) 40ms backwards}
+#contact-submit-btn{
+  position:relative;
+  overflow:hidden;
+  transition:transform 320ms var(--ease-expo),box-shadow 320ms var(--ease-soft),background-color 320ms var(--ease-soft),opacity 240ms;
+}
+#contact-submit-btn:hover{transform:translate3d(0,-2px,0);box-shadow:0 14px 28px -14px rgba(83,8,231,.42)}
+#contact-submit-btn:active{transform:translate3d(0,0,0) scale(.99)}
+#contact-submit-btn.is-sending{pointer-events:none;opacity:.82}
+.pg-btn-spinner{
+  position:absolute;
+  right:18px;
+  width:15px;
+  height:15px;
+  border-radius:999px;
+  border:2px solid rgba(255,255,255,.4);
+  border-top-color:#fff;
+  opacity:0;
+}
+#contact-submit-btn.is-sending .pg-btn-spinner{opacity:1;animation:pg-spin 720ms linear infinite}
+#contact-submit-btn.is-sending>span:first-child{opacity:.8}
+
+@keyframes pg-slide-down{from{opacity:0;transform:translate3d(0,-7px,0)}to{opacity:1;transform:none}}
+@keyframes pg-nudge{0%,100%{transform:translateX(0)}22%{transform:translateX(-5px)}58%{transform:translateX(4px)}82%{transform:translateX(-2px)}}
+@keyframes pg-pop-in{from{opacity:0;transform:translate3d(0,10px,0) scale(.985)}to{opacity:1;transform:none}}
+@keyframes pg-stage{from{opacity:0;transform:translate3d(0,16px,0)}to{opacity:1;transform:none}}
+@keyframes pg-badge{from{opacity:0;transform:scale(.4) rotate(-16deg)}to{opacity:1;transform:none}}
+@keyframes pg-spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+
+/* ---------- header / footer ------------------------------ */
+.pg-nav{transition:box-shadow 420ms var(--ease-soft),border-color 420ms var(--ease-soft)}
+.pg-scrolled .pg-nav{border-color:#DDD8E5;box-shadow:0 18px 40px -26px rgba(23,19,31,.45)}
+.pg-navlink{position:relative}
+.pg-navlink::after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:-6px;
+  height:1.5px;
+  background:currentColor;
+  transform:scaleX(0);
+  transform-origin:left center;
+  transition:transform 340ms var(--ease-expo);
+}
+.pg-navlink:hover::after,.pg-navlink[aria-current="page"]::after{transform:scaleX(1)}
+[data-pg="footer"] .pg-link{position:relative}
+[data-pg="footer"] .pg-link::after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:-3px;
+  height:1px;
+  background:var(--jd-violet);
+  transform:scaleX(0);
+  transform-origin:left center;
+  transition:transform 340ms var(--ease-expo);
+}
+[data-pg="footer"] .pg-link:hover::after{transform:scaleX(1)}
+[data-pg="footer"] .pg-social svg{transition:transform 360ms var(--ease-expo)}
+[data-pg="footer"] .pg-social:hover svg{transform:translate3d(3px,-3px,0) scale(1.08)}
+
+/* ---------- global team photograph -------------------------- */
+/* keeps a permanent overscale so the parallax never exposes an edge */
+html.pg-enhanced #global-team img.pg-zoom-in{scale:1.09}
+html.pg-enhanced #global-team [data-pg].is-in img.pg-zoom-in{scale:1.05}
+
+/* ---------- reduced motion ------------------------------- */
+@media (prefers-reduced-motion: reduce){
+  html.pg-enhanced [data-pg]{opacity:1 !important;transform:none !important;clip-path:none !important}
+  .pg-w>span{transform:none !important}
+  [data-pg-par],[data-pg="story"] .pg-story-bg{transform:none !important}
+  .pg-card::after{transform:none !important}
+}

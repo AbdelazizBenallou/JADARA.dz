@@ -1,0 +1,18 @@
+@layer base {
+  html, body { margin: 0; padding: 0; }
+  /* clip (not hidden) so parked entrance/parallax offsets can never create a
+     sideways scrollbar, while position:fixed and scroll anchoring keep working */
+  html { overflow-x: clip; }
+  body { overscroll-behavior: none; overflow-x: clip; }
+  main > :first-child { margin-top: 0 !important; }
+  main > :last-child { margin-bottom: 0 !important; }
+}
+::-webkit-scrollbar { display: none; }
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

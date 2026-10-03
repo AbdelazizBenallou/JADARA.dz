@@ -1,0 +1,12 @@
+/* purple framing ring on every editorial photograph */
+.jd-photo{
+  border:2px solid #cbbeff;
+  box-shadow:0 0 0 3px rgba(230,222,255,.6),0 26px 50px -34px rgba(83,8,231,.45);
+  transition:border-color .45s var(--ease-soft),box-shadow .45s var(--ease-soft);
+}
+@media (hover:hover){
+  .jd-photo:hover{
+    border-color:#b3a1ff;
+    box-shadow:0 0 0 4px rgba(203,190,255,.5),0 32px 58px -32px rgba(83,8,231,.55);
+  }
+}
